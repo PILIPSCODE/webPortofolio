@@ -320,11 +320,16 @@ footer ul li a i{
         left: -100px;
     }
     .card{
-        width: 288px;
+        width: 290px;
         height: 200px;
     }
-    .card.anim{
-        height: 250px;
+    .row .card.anim{
+        height: 285px;
+    }
+    .imgbox img{
+        width:130%;
+        transform: translateX(-30px);
+        border: 4px solid black;
     }
 }
      
