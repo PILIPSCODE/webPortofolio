@@ -1,0 +1,360 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: 	#512dee;
+}
+#about{
+    overflow: hidden;
+    padding-bottom: 20px;
+    background-color: #fc8701;
+}
+.paralax{
+    display: flex;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.paralax img {
+    position:absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+ .paralax .daun-1{
+    width: 50%;
+    z-index: 9;
+}
+ .tulisan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    font-size: 180px;
+}
+.pilips{
+    z-index:2 ;
+    right: 30px;
+}
+.navbar-brand{
+    background-color: coral;
+    padding: 0 15px;
+    border-radius: 30px;
+}
+.navbar  a{
+    color: white;
+    font-size:30px;
+}
+.nav-link:hover{
+    background-color: rgba(252, 135, 1, 0.705);
+    border-radius: 25px;
+    color: white;
+    transition: all 0.6s ease 0s;
+}
+.navbar{
+    background-color: darkorange;
+}
+
+.bawah{
+ height:30px;
+ border: 3px solid white;
+background-color: #292b2c;
+filter: blur(7px);
+}
+
+
+.saya{
+    width: 350px;
+    overflow: hidden;
+}
+.saya1{
+    width: 280px;
+    overflow: hidden;
+}
+.about{
+    margin-top: 80px;
+}
+#project{
+    padding-top: 80px;
+    overflow: hidden;
+    background-color: 		#512dee;
+}
+.active{
+    background-color: rgba(252, 135, 1, 0.705);
+    border-radius: 25px;
+    color: white;
+}
+.active1{
+    background-color: rgba(252, 135, 1, 0.705);
+    border-radius: 25px;
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+
+/* project */
+.card{
+    border: 4px solid black;
+    position: relative;
+    width: 600px;
+    color: white;
+    height: 310px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0, 0.5);
+    transition: 0.3s;
+    padding: 30px 50px;
+}
+.imgbox{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    
+
+}
+.imgbox img{
+    width:100%;
+    transform: translateY(-60px);
+    border: 4px solid black;
+}
+
+.con{
+    display: flex;
+    margin-bottom: 80px;
+    justify-content: center;
+  
+}
+
+.contol{
+    display: none;
+}
+
+.card.anim{
+    height: 390px;
+}
+.pro{
+    margin-bottom: 80px;
+}
+#contact{
+    overflow: hidden;
+}
+footer{
+    color: white;
+    overflow: hidden;
+}
+.bgdark{
+    background: black;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer ul li a i{
+    margin-right: 5px;
+}
+
+.grup{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+}
+.toggle{
+    width: 100px;
+    height: 55px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    justify-content: center;
+}
+.toggle i{
+    font-size: 50px;
+    transition: all 1s;
+}
+.skill .mh-profesional-skill{
+    padding-right: 60px;
+}
+.skill .mh-profesional-skill h3{
+  font-size: 30px;
+  line-height: 40pxt;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+.candidatos{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.candidatos .parcial{
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.candidatos .parcial .info{
+    position: relative;
+}
+
+.candidatos .parcial .info .name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+
+.candidatos .parcial .percentage-num{
+    position: absolute;
+    top: o;
+    right: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.candidatos .parcial .progresBar {
+    position: relative;
+    width: 100%;
+    height: 7px;
+    margin: 30px 0 2px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.candidatos .parcial .percentagen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #0bceaf;
+    transition:  2s all;
+    animation-name: animprogres;
+}
+
+
+@keyframes animprogres{
+   from{
+       width: 0;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsif */
+
+@media screen  and (max-width:840px){
+    .paralax .pilips{ 
+        width: 130%;
+        height: 130%;
+    }
+    .pilips{
+        left: -140px;
+        
+    }
+    .paralax .daun-1{
+       width: 57%;
+       height:57%;
+    }
+    .tulisan{ 
+        margin-top: 70px;
+        font-size: 130px;
+    }
+}
+
+@media screen and (width:422px){
+    .paralax .pilips{ 
+        width: 130%;
+    }
+    .pilips{
+        left: -190px;
+    }
+}
+@media screen and (max-width:620px){
+    .tulisan{
+        font-size: 90px;
+       
+    }
+    .pilips{
+        left: -120px;
+    }
+    .card{
+        width: 500px;
+        height: 260px;
+    }
+    .card.anim{
+        height: 330px;
+    }
+}
+@media (max-width:448px){
+    .tulisan{
+        font-size: 70px;
+    }
+    .paralax .daun-1{
+        width: 60%;
+        margin-top: 40px;
+        height: 55%;
+     }
+     .pilips{
+        left: -100px;
+    }
+    .card{
+        width: 288px;
+        height: 200px;
+    }
+    .card.anim{
+        height: 250px;
+    }
+}
+     
+@media screen and (max-width:354px){
+    .pilips{
+        left: -85px;
+    }
+    .tulisan{
+        font-size: 50px;
+    }
+    .paralax .daun-1{
+        margin-top: 60px;
+        width: 60%;
+        height: 45%;
+     }
+     .saya{
+         width: 280px;
+     }
+     .saya1{
+         width: 280px;
+     }
+     
+}
+@media (max-width:525px){
+    .card{
+       max-width: 400px;
+      height: 200px;
+    }
+    .card.anim{
+        height: 310px;
+    }
+}
