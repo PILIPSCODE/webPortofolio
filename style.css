@@ -51,6 +51,7 @@ body{
 .navbar  a{
     color: white;
     font-size:30px;
+    border-radius: 25px;
 }
 .nav-link:hover{
     background-color: rgba(252, 135, 1, 0.705);

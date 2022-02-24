@@ -99,6 +99,7 @@ card.forEach((e) => {
     e.classList.toggle('anim');
 })
 })
+  
   card[0].addEventListener('click',function(){
     content[0].classList.toggle('contol')
   })
